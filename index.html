@@ -367,5 +367,19 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            const nav=document.querySelector('#mainNav')
+            window.addEventListener("scroll",e=>{
+                console.log()
+                if (window.scrollY>=776){
+                    nav.style.backgroundColor='#000000'
+                    nav.style.paddingTop= '1rem'
+                    nav.style.paddingBottom= '1rem'
+                }
+                else{
+                    nav.style.backgroundColor='unset'
+                }
+            })
+        </script>
     </body>
 </html>
